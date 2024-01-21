@@ -35,8 +35,7 @@ const persistentStorage: StateStorage = {
     const searchParams = new URLSearchParams(getUrlSearch());
     searchParams.set(key, JSON.stringify(newValue))
     const { state, version } = JSON.parse(newValue) as { state: LocalAndUrlStoreStateTYpe, version: string }
-    console.log(buildShareableUrl(state, version))
-    // window.history.pushState(buildShareableUrl(state, version))
+    window.history.pushState(buildShareableUrl(state, version))
     localStorage.setItem(key, JSON.stringify(newValue))
   },
   removeItem: (key) => {

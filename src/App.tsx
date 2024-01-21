@@ -14,14 +14,14 @@ function App() {
 
   return (
     <>
-      {/* <SliceStore /> */}
+      <SliceStore />
       {/* <DeepNestStore /> */}
       {/* <NoSToreAction /> */}
       {/* <ZustandTYpescript /> */}
       {/* <SetMapStore /> */}
       {/* <URLState /> */}
       {/* <URLStateHash /> */}
-      <URLStateQueryString />
+      {/* <URLStateQueryString /> */}
     </>
   )
 }
